@@ -46,7 +46,7 @@ class ExportYueQueDoc:
         self.username = user_json['data']['name']
         print("=========== 用户信息初始化成功 ==========")
 
-    def get_repos_data(self):
+    def get_repos_data(self):  #修改下方注释信息
         """获取知识库"""
         repos_json = requests.get(self.base_url + '/users/' + self.login_id + '/repos', headers=self.headers).json()
         #print(repos_json)
@@ -60,7 +60,7 @@ class ExportYueQueDoc:
             if name == "资产收集":
                 repos_list.append({"rid": rid, "repos_name": name})
                 print(repos_list)
-        repos_list = [{'rid': 29295225, 'repos_name': 'ctf知识库'}] # 导出其他知识库信息知识库id：如收藏知识库
+        #repos_list = [{'rid': 123123, 'repos_name': '库名'}] # 导出其他知识库信息知识库id：如收藏知识库
         print(repos_list)
         return repos_list
         print(repos_list)
