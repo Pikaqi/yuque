@@ -1,0 +1,9 @@
+{
+    "TOKEN": "",    #输入雨雀token                           
+    "USER_AGENT": "wei",                              
+    "BASE_URL": "https://customspace.yuque.com/api/v2", 
+    "DATA_PATH": "yuque",                              
+    "IMAGE_PREFIX": "./markdown_images/", 
+    "IMAGE_DIR" : "markdown_images" 
+}
+
